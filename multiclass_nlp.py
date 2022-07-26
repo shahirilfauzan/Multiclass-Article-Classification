@@ -24,9 +24,9 @@ from tensorflow.keras.preprocessing.sequence import pad_sequences
 from multiclass_nlp_module import ModelDevelopment,ModelEvaluation
 from sklearn.metrics import confusion_matrix, classification_report
 #%%Constant
-TOKENIZER_SAVE_PATH=os.path.join(os.getcwd(),'model','tokenizer.json')
-OHE_SAVE_PATH=os.path.join(os.getcwd(),'model','ohe.pkl')
-MODEL_SAVE_PATH=os.path.join(os.getcwd(),'model','model.h5')
+TOKENIZER_SAVE_PATH=os.path.join(os.getcwd(),'saved_models','tokenizer.json')
+OHE_SAVE_PATH=os.path.join(os.getcwd(),'saved_models','ohe.pkl')
+MODEL_SAVE_PATH=os.path.join(os.getcwd(),'saved_models','model.h5')
 #%%STEP 1 Data Loading
 df=pd.read_csv('https://raw.githubusercontent.com/susanli2016/PyCon-Canada-2019-NLP-Tutorial/master/bbc-text.csv')
 #%%STEP 2 Data Inspection
